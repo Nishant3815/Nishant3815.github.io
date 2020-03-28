@@ -1,0 +1,28 @@
+{
+  "name": "nishant3815.github.io",
+  "version": "1.0.0",
+  "description": "Portfolio of Nishant Raj",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url":  "git+https://github.com/Nishant3815/Nishant3815.github.io.git"
+  },
+  "keywords": [
+    "datascience",
+    "tensorflow",
+    "pytorch",
+    "scikitlearn",
+    "machinelearning",
+    "deeplearning"
+  ],
+  "author": "Nishant Raj " ,
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/assassinsurvivor/assassinsurvivor.github.io/issues" "git+https://github.com/Nishant3815/Nishant3815.github.io/issues"
+  },
+  "homepage": "https://github.com/Nishant3815/Nishant3815.github.io#readme"
+}
