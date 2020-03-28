@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio of Nishant Raj, India">
+    <meta name="keywords" content="HTML5, CSS3, JavaScript, Data Science, Tensorflow, Machine Learning, Sites, Portfolio, Deep Learning,Artificial Intelligence ,Nishant Raj, NLP, Computer Vision">
+    <title>Nishant Raj | Data Scientist</title>
+
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="ext/css/ionicons.min.css" rel="stylesheet">
+    <link href="res/css/styles.css" rel="stylesheet">
+	<style>
+	.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:15px;
+	width:100%;
+	background:#eee;
+	height:35px;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+width:110px;
+	font-weight:bold;
+	font-size:13px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:4px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.1);
+	padding:0 20px;
+	height:35px;
+	line-height:35px;
+	-webkit-border-top-left-radius:3px;
+	-webkit-border-bottom-left-radius:3px;
+	-moz-border-radius-topleft:3px;
+	-moz-border-radius-bottomleft:3px;
+	border-top-left-radius:3px;
+	border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+	height:35px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:3px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:11px;
+	height:35px;
+	line-height:35px;
+	color:#ffffff;
+	color:rgba(0, 0, 0, 0.4);
+}
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+jQuery(document).ready(function(){
+	jQuery('.skillbar').each(function(){
+		jQuery(this).find('.skillbar-bar').animate({
+			width:jQuery(this).attr('data-percent')
+		},6000);
+	});
+});
+
+</script>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <![endif]-->
+</head>
+
+<body data-spy="scroll" data-target="#main-nav">
+
+    <div class="loader-screen">
+        <ul class="loading-bar">
+            <li class="loading-line"></li>
+            <li class="loading-line"></li>
+            <li class="loading-line"></li>
+            <li class="loading-line"></li>
+            <li class="loading-line"></li>
+			<li class="loading-line"></li>
+        </ul>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <header class="main-header" id="main-header">
+                <nav class="navbar">
+                    <h6><span class="sr-only">Main navigation</span></h6>
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button type="button" class="nav-toggle-btn collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="ion-navicon nav-open"></span>
+                                <span class="ion-android-close nav-close"></span>
+                            </button>
+                            
+                        </div>
+
+                        <div class="collapse navbar-collapse" id="main-nav">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#about-me" class="nav-link">About me</a></li>
+                                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                                <li><a href="#contact" class="nav-link">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="overlay"></div>
+                <div class="welcome-box">
+				    <h1>Nishant Raj</h1>
+                    <p>Data Scientist at ZS Associates</p>
+                </div>
+                <nav class="social-nav">
+                    <h6><span class="sr-only">Social navigation</span></h6>
+                    <ul class="nav invisible">
+                        
+                        <li><a class="social-btn social-linkedin" href="https://www.linkedin.com/in/nishant-raj-iitr/" target="_blank"><span class="ion-social-linkedin"></span></a></li>
+                        <li><a class="social-btn social-github" href="https://github.com/Nishant3815" target="_blank"><span class="ion-social-github"></span></a></li>
+                        <li><a class="social-btn social-email" href="mailto:nishant.raj.iitr@gmail.com"><span class="ion-ios-email"></span></a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <!-- About me -->
+        <div class="row">
+            <section class="container about-me" id="about-me">
+
+                <div class="row">
+                    <h2>About me</h2>
+                </div>
+
+                <div class="row visible-xs visible-sm">
+                    <div class="col-sm-12 bg-me">
+                    </div>
+                </div>
+
+                <div class="row feats-row">
+                    <div class="col-md-6 feats-container">
+                        <section>
+                            <h3><span class="ion-ios-glasses-outline icon-header"></span>Nishant Raj</h3>
+                            <p>Hi! I work as a Data Science Associate at ZS Associates, Bengaluru. I am broadly interested in working in the field of machine and deep learning with applications to text data and multi-agent systems. I graduated from Indian Institute of Technology, Roorkee in 2018. </p>
+                        </section>
+                    </div>
+                    <div class="col-md-6 feat-bg bg-me hidden-xs hidden-sm invisible"></div>
+                </div>
+
+                <div class="row feats-row">
+                    <div class="col-md-6 feat-bg bg-whatido hidden-xs hidden-sm invisible">
+                    </div>
+                    <div class="col-md-6 feats-container">
+                        <section>
+                            <h3><span class="ion-ios-color-wand-outline icon-header"></span>Work Experience</h3>
+                            <ul style="list-style-type:circle;margin-bottom: 0.5em;margin-left: 0.5em;">
+                                <li><span class="color-main">ZS Associates (Jun 2018 - Present):</span> Leveraged NLP and predictive modeling techniques to assist Fortune 500 healthcare clients</li>
+                                <li><span class="color-main">Capegemini (May 2017 - Jul 2017):</span> Developed an intelligent speech tagger using NLP and transfer learning techniques</li>
+                                <li><span class="color-main">Other Projects: </span> Details in <span class="color-main"><strong> <a href = https://drive.google.com/file/d/1U-tPgnSphNPQSkmP-yQX7Vv3fdbJUZbv/view>Resume</a></strong></span></li>
+                        
+                            </ul>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="row feats-row">
+                    <div class="col-md-6 feats-container">
+                        <section>
+                            <h3><span class="ion-ios-list-outline icon-header"></span>Skills & Achievements</h3>
+                            <ul class="list-unstyled">
+                                <li><span class="color-main">Computer Languages:</span> Python, C++, R, SQL, Git, LaTeX</li>
+                                <li><span class="color-main">Tools & Technologies:</span> Tensorflow, Keras, Sklearn, PySpark, Databricks</li>
+                                <li><span class="color-main">Extra-curricular Activities:</span>Served as Secretary and co-founded Data Science Group, IIT Roorkee (organized lectures and research discussions); Ranked in top 10 in several hackathons; Delegate (Policy Bootcamp) at ISB Hyderabad</li>
+                             
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="col-md-6 feat-bg bg-facts hidden-xs hidden-sm invisible"></div>
+                </div>
+
+            </section>
+        </div>
+
+</div> <!-- End Skill Bar -->
+            </div>
+        </section>
+
+        <!-- Portfolio -->
+        <div class="portfolio-row row">
+            <section class="container portfolio" id="portfolio">
+                <div class="row">
+                    <h2>Portfolio</h2>
+                </div>
+
+                <div class="row">
+                    <nav>
+                        <h6><span class="sr-only">Portfolio navigation</span></h6>
+                        <ul class="nav nav-pills portfolio-nav filter-options">
+                            <li class="active-tab" data-filter="all">All</li>
+							<li data-filter="1">Personal</li>
+                            <li data-filter="2">Corporate</li>
+                            
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="row">
+                    <div class="showcase-container clearfix" id="showcase-container">
+
+                      
+						
+						<section class="col-sm-6 filtr-item showcase-item" data-category="1">
+                            <img class="img-responsive showcase-img" src="res/img/smart_sig_verify.jpg" alt="sig_ver">
+                            <div class="item-desc">
+                                <h4>Smart Signature Verfication System</h4>
+                                <p>Developed a Django app and deployed on Heroku for signature verification purposes using Siamese Architecture in deep learning (one-shot learning).</p>
+								<a class="button github-btn" href="https://github.com/Nishant3815/Smart-Signature-Verification" target="_blank">GitHub</a>
+					                                
+                            </div>
+                        </section>
+						
+					
+                
+				<br>
+				
+				
+					
+						<section class="col-sm-6 filtr-item showcase-item" data-category="2">
+									<img class="img-responsive showcase-img" src="res/img/weak_sig.jpg" alt="nlp_clustering">
+									<div class="item-desc">
+										<h4>Weak Signals Clustering using NLP</h4>
+										<p>Utilized guided LDA and hierarchical clustering on embeddings developed on textual logs to identify adverse event clusters. </p>
+									   
+									</div>
+								</section>
+					
+				
+					<br>
+					
+	
+					</div>
+				</div>
+			
+			
+			</section>
+        </div>
+
+
+                        
+                        
+        <br>
+		
+        <!-- Contact -->
+        <div class="row contact-row dark-container">
+            <section class="container contact" id="contact">
+                <div class="row">
+                    <h2>Get in touch</h2>
+                </div>
+                <div class="row">
+                    <form id="contact-form" method="post" action="https://formspree.io/nishant95.raj@gmail.com">
+                        <div class="row">
+                            <input name="form-name" id="form-name" type="text" placeholder="your name" required>
+                        </div>
+                        <div class="row">
+                            <input name="form-email" id="form-email" type="email" placeholder="your email" required>
+                        </div>
+                        <div class="row">
+                            <textarea name="form-msg" id="form-msg" placeholder="your message" required></textarea>
+                        </div>
+                        <div class="row">
+                            <button type="submit" class="button">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </div>
+
+        <!-- Footer -->
+        <div class="row dark-container">
+            <footer class="footer-main">
+                <p>Designed by Nishant Raj &mdash; 2020 &copy;</p>
+            </footer>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/3.2.0/imagesloaded.pkgd.min.js"></script>
+    <script src="ext/js/jquery.filterizr.min.js"></script>
+    <script src="ext/js/particles.min.js"></script>
+    <script src="res/js/typewriter.js"></script>
+    <script src="res/js/app.js"></script>
+
+</body>
+</html>
